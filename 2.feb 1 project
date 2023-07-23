@@ -1,1 +1,217 @@
 
+
+
+css part
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #edf1fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: rgb(18, 155, 155);
+  padding: 4px 10px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-weight: 700;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(18, 155, 155);
+  border: 1px solid black;
+}
+
+header {
+  padding: 15px 0;
+}
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-weight: 500;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.search-field {
+  display: flex;
+  gap: 30px;
+}
+
+input {
+  padding: 4px 10px;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+}
+
+.hero-left-section {
+  width: 60%;
+  padding: 0 8%;
+}
+
+.hero-left-section h1 {
+  font-weight: 800;
+  font-size: 38px;
+  margin-bottom: 16px;
+}
+.hero-left-section h1 span {
+  color: rgb(18, 155, 155);
+  font-weight: 900;
+  background-color: #dfdfe0;
+  padding: 0 15px;
+}
+
+.hero-left-section p {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.hero-left-section p span {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(18, 155, 155);
+}
+
+.hero-right-section {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.hero-right-section-btn {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-right-section img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+footer {
+  font-weight: 600;
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-around;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+
+
+
+
+
+
+html part
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS LInk -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!--  Google Font, Poppins -->
+    <!-- CDN -->
+    <!-- FontAweosme CDN -->
+    <title>Project 1</title>
+  </head>
+  <body>
+    <!-- Started -->
+    <!-- Header -->
+    <header>
+      <nav>
+        <!-- Logo -->
+        <div class="logo">LOGO</div>
+        <!-- Menus -->
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- Search Area -->
+        <div class="search-field">
+          <input type="text" placeholder="Search" />
+          <button>Search</button>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <!-- Left Section of HERO -->
+      <div class="hero-left-section">
+        <h1>Hello, I am a <span> Web Developer</span></h1>
+        <p>
+          I am an aspiring <span>Full Stack JavaScript Developer</span> , who is
+          currently working as <span>a Freelancer</span> for
+          <span> National and International Client.</span>
+        </p>
+      </div>
+      <!-- Right  Hero Section -->
+      <div class="hero-right-section">
+        <img src="./assets/avtar.png" alt="Avatar" />
+        <div>
+          <button class="hero-right-section-btn">Chat With me</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright © 2022 LOGO. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

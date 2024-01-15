@@ -1,7 +1,10 @@
 
 //import Homelayout from "../layout/Homelayout";
+import React from 'react';
 import { Link } from "react-router-dom";
+
 import Myimage from "../assets/images/apj.png"
+
 function Home(){
 
 return(
@@ -32,6 +35,7 @@ return(
     <div className="w-1/2 flex items-center justify-center">
         <img src={Myimage} alt="home-page"/>
     </div>
+   
 </div>
 
     );

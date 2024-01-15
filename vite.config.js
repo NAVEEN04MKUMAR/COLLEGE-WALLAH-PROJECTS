@@ -9,4 +9,19 @@ export default defineConfig({
   react(),
   tailwindcss({jit:true}),
 ],
+
+ server: {
+        fs: {
+            strict: false,
+        },
+    },
+
+    build: {
+    rollupOptions: {
+      input: {
+        main: './main.jsx', // Adjust the file path as needed
+      },
+    },
+  },
 });
+

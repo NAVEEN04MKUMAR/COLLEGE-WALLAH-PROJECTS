@@ -1,0 +1,119 @@
+html part
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Headphone</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- Google CDN -->
+  </head>
+  <body>
+    <!-- Project Start -->
+    <nav>
+      <ul>
+        <li><img src="./assets/logo.png" alt="Logo" /></li>
+        <li>Blog</li>
+        <li>Calm Playlist</li>
+        <li>Calm Playlist</li>
+      </ul>
+    </nav>
+    <main>
+      <!-- Left Side Section -->
+      <div class="leftmain">
+        <h1>Be Focus and Productive</h1>
+        <p>Not just an ordinary headphones. It's designed for meditation.</p>
+        <button>Learn More</button>
+      </div>
+      <!-- Right Side Section -->
+      <div class="rightmain">
+        <div>
+          <img src="./assets/img1.png" alt="Image 1" />
+          <img src="./assets/img2.png" alt="Image 2" />
+        </div>
+        <img src="./assets/img3.png" alt="Image 3" />
+      </div>
+    </main>
+  </body>
+</html>
+
+
+
+css part
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f5ed;
+}
+nav {
+  padding: 20px 10%;
+  height: 15vh;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 5%;
+  font-weight: 600;
+}
+
+nav ul li img {
+  width: 100px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftmain {
+  width: 40%;
+}
+
+.leftmain h1 {
+  font-size: 60px;
+}
+
+.leftmain p {
+  margin: 5% 0;
+}
+
+.leftmain button {
+  padding: 15px 20px;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  background-color: #3b855b;
+  border-radius: 10px;
+}
+
+.rightmain {
+  /* width: 60%; */
+  padding: 7%;
+}
+
+.rightmain div img {
+  width: 30%;
+}
+
+.rightmain div img:first-child {
+  margin-right: 20px;
+}
+
+.rightmain div {
+  margin-bottom: 20px;
+}
+
+.rightmain > img {
+  width: 64%;
+}
+
